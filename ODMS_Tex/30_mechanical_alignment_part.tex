@@ -1,0 +1,51 @@
+\section{III. Mechanical Alignment Part}
+
+%\begin{tabular}{@{\quad}>{\sffamily}p{120mm}}
+
+\subsection{A. Motion Control Configurations}
+
+%\begin{tabular}{@{\quad}>{\sffamily}p{120mm}>{\bfseries}r@{\quad}}
+
+\begin{easylist}
+\ListProperties(Style**=\sffamily, Style1*=$\bullet$ , Numbers=a, Style2*={- }, Hide=100, Progressive=20pt)
+& Motion Controller : PCI board in the control PC
+& Number of Controllable Axis : 16
+& Align Stages $\&$ Axes
+&& Left Stage : 6 axes (X, Y, Z, θx, θy, θz)
+&& Right Stage : 6 axes(X, Y, Z, θx, θy, θz)
+&& Center Stage : 1 axes
+&& Camera Stage : 1 axes
+\end{easylist}
+
+%\end{tabular}
+
+
+\figszh{fig_aligner}{Left \& Right Aligner}{Left Stage System}{fig_left_aligner.png}{Right Stage System}{fig_right_aligner.png}{60mm}
+
+
+\subsection{B. Stage Properties}
+
+\begin{tabular}{>{\sffamily}c*{3}{>{\sffamily}c}}
+\hline\hline
+Axis & Stroke & {Mechanical Resolution} & Min. Controllable Distance\\\hline
+X & 20 mm & 1.0 μm & 0.05 μm\\
+Y & 20 mm & 1.0 μm & 0.05 μm\\
+Z & 70 mm & 1.0 μm & 0.05 μm\\
+θx & 16 ˚ & 0.003˚ & 0.00015˚\\
+θy & 16 ˚ & 0.0032˚ & 0.00016˚\\
+θz & 16 ˚ & 0.0032˚ & 0.00016˚\\
+\hline
+\multicolumn{4}{l}{*Left and right stages are all the same as each corresponding axis}\\
+\end{tabular}\\
+
+\subsection{C. Z-Axis Approach Sensor}
+\begin{easylist}
+\ListProperties(Style**=\sffamily, Style1*={- } , Hide=100, Progressive=20pt)
+& Contact Detection Sensor
+\end{easylist}
+
+\subsection{D. Vision Cameras}
+\begin{easylist}
+\ListProperties(Style**=\sffamily, Style1*={- } , Hide=100, Progressive=20pt)
+& Top View and Side View (orthogonal to optic axis)
+\end{easylist}

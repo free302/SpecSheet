@@ -1,0 +1,48 @@
+\section{I. General Specifications}
+
+%\begin{tabular}{@{\quad}>{\sffamily}p{120mm}}
+
+
+\figzu{fig_sys}{fig_all_system.jpg}{10cm}{2mm}{Photo of \sysname}
+
+\figzu{fig_gui}{fig_gui.png}{10cm}{2mm}{GUI of Control SW}
+
+\newpage
+\figzu{fig_diagram}{FunctionDiagram.pdf}{15cm}{40mm}{Function Diagram of \sysname}
+
+
+
+\subsection{A. System Configuration}
+
+%\begin{tabular}{@{\quad}>{\sffamily}p{120mm}>{\bfseries}r@{\quad}}
+
+\begin{easylist}
+\ListProperties(Style**=\sffamily, Style1*=$\bullet$ , Style2*={- }, Hide=100, Progressive=20pt)
+& Control PC $\&$ SW
+&& PC : Windows 7 x86, 4GB RAM, 23'' LCD Monitor
+&& SW : GUI, Motion Control, Camera Control, Automatic Align $\&$ UV Control
+& Optical Device Aligning $\&$ Bonding System
+&& DUT/FAB Mount Jig Part
+&& Mechanical Alignment Part
+&& Optical Measurement Part
+&& Bonding Part
+
+\end{easylist}
+
+%\end{tabular}
+
+\subsection{B. Available DUTs (Measurement $\&$ Analysis)}
+\begin{easylist}
+\ListProperties(Style**=\sffamily, Style1*={- } , Hide=100, Progressive=20pt)
+& O-Band Multiple Channel CWDM MUX $\&$ DeMUX chip
+& O-Band Multiple Channel DWDM chip
+& E/C/L-Band Multiple Channel CWDM MUX $\&$ DeMUX chip (optional)
+& E/C/L-Band Multiple Channel DWDM chip (optional)
+\end{easylist}
+
+\subsection{C. Output Data $\&$ File Format}
+\begin{easylist}
+\ListProperties(Style**=\sffamily, Style1*={- } , Hide=100, Progressive=20pt)
+& Discrete spectra of transmittance of 2 DUT channels
+& Horizontal tab (ASCII code 0x09) separated text file format
+\end{easylist}

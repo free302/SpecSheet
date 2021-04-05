@@ -1,0 +1,66 @@
+\section{I. General Specifications}
+
+%\begin{tabular}{@{\quad}>{\sffamily}p{120mm}}
+
+
+\figzu{fig_sys}{fig_all_system.png}{13cm}{2mm}{Photo of \sysname}
+
+\figzu{fig_gui}{fig_gui.png}{13cm}{2mm}{GUI of Control SW}
+
+\newpage
+\figzu{fig_diagram}{FunctionDiagram.pdf}{15cm}{40mm}{Function Diagram of \sysname}
+
+
+
+\subsection{A. System Configuration}
+
+%\begin{tabular}{@{\quad}>{\sffamily}p{120mm}>{\bfseries}r@{\quad}}
+
+\begin{easylist}
+\ListProperties(Style**=\sffamily, Style1*=$\bullet$ , Style2*={- }, Hide=100, Progressive=20pt)
+& Control PC $\&$ SW
+&& PC : Windows 7 x86, 4GB RAM, 23'' LCD Monitor
+&& SW : GUI, Motion Control, Camera Control, Automatic Align $\&$ Measurement
+& Optical Device Measurement System
+&& DUT/FAB Mount Jig Part
+&& Mechanical Alignment Part
+&& Optical Measurement Part
+& Data Server
+&& Linux x64, 4GB RAM, 23'' LCD Monitor
+&& DBMS Service
+&& Web Service
+&& WDM Analysis Service
+\end{easylist}
+
+%\end{tabular}
+
+\subsection{B. Available DUTs (Measurement $\&$ Analysis)}
+\begin{easylist}
+\ListProperties(Style**=\sffamily, Style1*={- } , Hide=100, Progressive=20pt)
+& O-Band 4 channel CWDM MUX $\&$ DeMUX chip
+& O-Band 4 channel DWDM chip
+& O/E-Band 8 channel CWDM MUX $\&$ DeMUX chip (optional)
+& O/E/C/L-Band 4/16/40 channel DWDM chip (optional)
+\end{easylist}
+
+\subsection{C. Output Data $\&$ File Format}
+\begin{easylist}
+\ListProperties(Style**=\sffamily, Style1*={- } , Hide=100, Progressive=20pt)
+& Discrete spectra of transmittance of all DUT channels
+& Horizontal tab (ASCII code 0x09) separated text file format
+\end{easylist}
+
+\subsection{D. WDM Analysis Service Outputs}
+\begin{easylist}
+\ListProperties(Style**=\sffamily, Style1*=$\bullet$ , Style2*={- }, Hide=100, Progressive=20pt)
+& Peak Insertion Loss, Peak Wavelength
+&& Maximum transmitted point of each channel
+& Bandwidth Min/Max Insertion Loss
+&& Min/max transmitted point in the pass bandwidth of each channel
+& Crosstalk (Adjacent/Total/Non-Adjacent)
+&& Ratio of maximum transmitted power of other channel wavelength to the peak power of measured channel
+& Center Wavelength
+&& Central wavelength of the channel calculated with 3dB pass band
+& Pass Band (1dB, 3dB)
+&& Wavelength range at which the transmittance is larger than 1dB or 3dB
+\end{easylist}
